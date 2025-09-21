@@ -31,11 +31,17 @@ A **web-based Health Assistant** built with **Python Flask** that provides **dis
 
 my-project/
 │── app.py # Flask application
+
 │── symptom_disease_150.csv # Dataset of symptoms and diseases
+
 │── requirements.txt # Python dependencies
+
 │── Procfile # Deployment file for Render
+
 │── runtime.txt # Python version for deployment
+
 │── templates/
+
 │ └── index.html # Frontend HTML template
 
 ## 👨‍💻 Author
