@@ -1,0 +1,17 @@
+Fever,Cough,Headache,Fatigue,Sore_Throat,Nausea,Vomiting,Diarrhea,Shortness_Breath,Chest_Pain,Joint_Pain,Skin_Rash,Toothache,Ear_Pain,Vision_Blur,Hearing_Loss,Abdominal_Pain,Back_Pain,Dizziness,Loss_Appetite,Swelling,Bleeding,Weight_Loss,Night_Sweats,Anxiety,Disease,Precautions,Medication
+1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Common Cold,"Rest, fluids, paracetamol","Paracetamol, Cough Syrup"
+1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Influenza,"Rest, hydration, doctor if severe",Oseltamivir (if prescribed)
+1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,COVID-19,"Isolation, mask, fluids",Doctor prescribed only
+1,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,Tuberculosis,"Long treatment, regular medication",6-month antibiotic regimen (doctor prescribed)
+1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,HIV/AIDS,"Safe sex, ART therapy",Antiretroviral Therapy (doctor prescribed)
+1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,Rabies,"Wash wound, immediate hospital visit",Rabies vaccine + immunoglobulin (doctor only)
+1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,Heart Attack,"Emergency care, hospital","Aspirin (emergency), Clot busters (doctor only)"
+0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,Hypertension,"Low salt diet, exercise","Amlodipine, Atenolol (doctor prescribed)"
+0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,Asthma,"Avoid triggers, inhaler use",Salbutamol Inhaler
+1,1,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,Pneumonia,"Doctor consultation, rest, fluids",Antibiotics (doctor prescribed)
+0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,Gastritis,"Avoid spicy food, antacids","Pantoprazole, Antacids"
+0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,Diabetes,"Diet control, exercise","Metformin, Insulin (doctor prescribed)"
+0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,Dental Caries,"Brush twice daily, avoid sugar","Painkillers, Dentist cleaning"
+0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,Gum Infection,"Oral hygiene, warm water gargle",Antibiotics (dentist prescribed)
+0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,Skin Allergy,"Avoid allergen, apply lotion","Cetirizine, Calamine Lotion"
+0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,Psoriasis,"Moisturizers, avoid triggers",Topical Steroids (doctor prescribed)

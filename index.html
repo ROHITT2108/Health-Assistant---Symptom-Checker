@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Assistant</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f6f9; padding: 20px; }
+        .container { max-width: 700px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #2c3e50; }
+        input, button { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+        button { background: #2c3e50; color: #fff; cursor: pointer; }
+        button:hover { background: #34495e; }
+        .card { background: #ecf0f1; padding: 10px; border-radius: 8px; margin-bottom: 10px; }
+        .note { color: #c0392b; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🩺 Health Assistant</h1>
+        <form method="POST">
+            <label>Enter your symptoms:</label>
+            <input type="text" name="symptoms" placeholder="e.g. fever, headache, teeth pain" required>
+            <button type="submit">Check</button>
+        </form>
+
+        {% if result %}
+            <h2>✅ Possible Diseases:</h2>
+            {% for rec in result.recommendations %}
+                <div class="card">
+                    <strong>Disease:</strong> {{ rec.disease }} (Match: {{ rec.match }})<br>
+                    <strong>Precautions:</strong> {{ rec.precautions }}<br>
+                    <strong>Medicines:</strong> {{ rec.medicines }}
+                </div>
+            {% endfor %}
+
+            <h2>🔹 Symptom-wise Advice:</h2>
+            {% for rec in result.symptom_recommendations %}
+                <div class="card">
+                    <strong>Symptom:</strong> {{ rec.symptom }}<br>
+                    <strong>Precaution:</strong> {{ rec.precaution }}<br>
+                    <strong>Medicine:</strong> {{ rec.medicine }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        {% if unmatched %}
+            <p class="note">⚠️ Could not match symptoms: {{ unmatched | join(", ") }}</p>
+        {% endif %}
+
+        <p class="note">⚠️ Note: These are general recommendations. Consult a doctor if symptoms persist.</p>
+    </div>
+</body>
+</html>
